@@ -1,0 +1,15 @@
+{
+  "name": "mfe-todo-list",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start:todo-status": "yarn workspace todo-status run build && yarn workspace todo-status run preview",
+    "start:todo-creation": "yarn workspace todo-creation run build && yarn workspace todo-creation run preview",
+    "start:app": "yarn workspace todo-app run dev"
+  },
+  "private": true
+}
